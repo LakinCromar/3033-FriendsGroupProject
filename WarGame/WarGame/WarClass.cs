@@ -26,6 +26,29 @@ namespace WarGame
         }
 
     }
+    public enum Suit
+    {
+        Hearts,
+        Diamonds,
+        Clubs,
+        Spades
+    }
+    public enum Number
+    {
+        Ace,
+        King,
+        Queen,
+        Jack,
+        Ten,
+        Nine,
+        Eight,
+        Seven,
+        Six,
+        Five, 
+        Four,
+        Three,
+        Two
+    }
 
     class ShuffleCards
     {
