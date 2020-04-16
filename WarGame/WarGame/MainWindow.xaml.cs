@@ -92,7 +92,7 @@ namespace WarGame
         }
         private void NewGameBTN_Click(object sender, RoutedEventArgs e)
         {
-
+            
 
 
 

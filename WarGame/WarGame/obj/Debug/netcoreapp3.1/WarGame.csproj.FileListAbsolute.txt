@@ -3,3 +3,17 @@ C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame_MarkupCompile.cache
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame_MarkupCompile.lref
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\bin\Debug\netcoreapp3.1\WarGame.exe
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\bin\Debug\netcoreapp3.1\WarGame.deps.json
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\bin\Debug\netcoreapp3.1\WarGame.runtimeconfig.json
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\bin\Debug\netcoreapp3.1\WarGame.runtimeconfig.dev.json
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\bin\Debug\netcoreapp3.1\WarGame.dll
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\bin\Debug\netcoreapp3.1\WarGame.pdb
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.g.resources
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.csproj.CoreCompileInputs.cache
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.AssemblyInfoInputs.cache
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.AssemblyInfo.cs
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.dll
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.pdb
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.genruntimeconfig.cache
