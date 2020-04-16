@@ -17,213 +17,213 @@ namespace WarGame
         {
       
             //Dictionary<string, int> Deck = new Dictionary<string, int>();
-            List<card> deck = new List<card>();
+          Deck = new List<card>();
 
-            deck.Add(new card(){
+            Deck.Add(new card(){
               suit=  Suit.Spades,
                 num = Number.Ace
             });
-            deck.Add(new card()
+            Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
-            }); deck.Add(new card()
+            }); Deck.Add(new card()
             {
                 suit = Suit.Spades,
                 num = Number.Ace
@@ -295,22 +295,22 @@ namespace WarGame
         /// </summary>
         /// <param name="cardsShuffle"></param>
         /// <returns>Shuffled set of cards</returns>
-        public Dictionary<string, int> ShuffledDeck(Dictionary<string,int> cardsShuffle)
+        public void ShuffledDeck(Dictionary<string,int> cardsShuffle)
         {
             //Dictionary<string, int> ShuffledDeck = new Dictionary<string, int>(cardsShuffle);
             List<card> ShuffleDeck = new List<card>();
             Random Shuffle = new Random();
             for (int i = 0; i < 53; i++)
             {
-                 int selection = Shuffle.Next(1, 53);
-                ShuffleDeck = Deck.OrderBy(X => Shuffle.Next).ToList();
+                int selection = Shuffle.Next(1, 53);
+                Deck = Deck.OrderBy(x => Shuffle.Next()).ToList();
             }
-          
-                
-                return string.Empty;
         }
 
+
     }
+
+}
 
     public class card
     {
