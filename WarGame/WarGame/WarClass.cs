@@ -1,5 +1,6 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using System.Text;
 
@@ -9,17 +10,25 @@ namespace WarGame
     {
         public string Player1 { get; set; }
         public string Player2 { get; set; }
-        public Dictionary<string, string> Cards { get; set; }
-        public Dictionary<string, string > DeckShuffle { get; set; }
-        
+        public Dictionary<string, int > Deck { get; set; }
+
         public WarClass()
         {
-             DeckShuffle = new Dictionary<string, string>();
+             Deck = new Dictionary<string, int>();
+
         }
-        public string ShuffleCards()
+
+        /// <summary>
+        /// This will shuffle the cards once the person clicks new game by randomizing the order of cards and storing it to a new deck
+        /// </summary>
+        /// <param name="cardsShuffle"></param>
+        /// <returns>Shuffled set of cards</returns>
+        public Dictionary<string, int> ShuffledDeck(Dictionary<string,int> cardsShuffle)
         {
+            Dictionary<string, int> ShuffledDeck = new Dictionary<string, int>(cardsShuffle);
+        
             Random Shuffle = new Random();
-            Dictionary<string, string> ShuffledDeck = new Dictionary<string, string>(Dictionary DeckShuffle);
+            
             ShuffledDeck = ShuffledDeck.Select(cards => cards);
 
             return string.Empty;
@@ -50,10 +59,4 @@ namespace WarGame
         Two
     }
 
-    class ShuffleCards
-    {
-        
-        
-
-    }
 }
