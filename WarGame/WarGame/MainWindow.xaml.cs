@@ -149,8 +149,7 @@ namespace WarGame
             Deck.Add("Three", "Diamonds");
             Deck.Add("Two", "Diamonds");
 
-
-
+            //public const string imgPath = @"Cards/"
         }
 
         private void NewGameBTN_Click(object sender, RoutedEventArgs e)

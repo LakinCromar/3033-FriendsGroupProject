@@ -11,7 +11,7 @@ namespace WarGame
         public string Player2 { get; set; }
         public Dictionary<string, string> Cards { get; set; }
         public Dictionary<string, string > DeckShuffle { get; set; }
-
+        
         public WarClass()
         {
              DeckShuffle = new Dictionary<string, string>();

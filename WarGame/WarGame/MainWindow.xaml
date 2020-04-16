@@ -11,6 +11,7 @@
         <Button x:Name="NewGameBTN" Content="New Game" HorizontalAlignment="Left" Margin="34,38,0,0" VerticalAlignment="Top" Height="55" Width="165" Click="NewGameBTN_Click"/>
         <Button x:Name="FlipCardBTN" Content="Flip CArd" HorizontalAlignment="Left" Margin="34,162,0,0" VerticalAlignment="Top" Height="55" Width="165" IsEnabled="False"/>
         <Button x:Name="WarBTN" Content="Begin War" HorizontalAlignment="Left" Margin="34,283,0,0" VerticalAlignment="Top" Height="55" Width="165" IsEnabled="False"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="534,-84,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
