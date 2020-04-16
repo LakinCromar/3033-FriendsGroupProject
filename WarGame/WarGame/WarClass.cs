@@ -17,277 +17,270 @@ namespace WarGame
         {
       
             //Dictionary<string, int> Deck = new Dictionary<string, int>();
-          Deck = new List<card>();
+            List<card> deck = new List<card>();
 
-            Deck.Add(new card(){
-              suit=  Suit.Spades,
+            //Spades
+            deck.Add(new card(){
+                suit=  Suit.Spades,
+                num = Number.Ace});
+            deck.Add(new card()
+            {suit = Suit.Spades,
+                num = Number.King
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Queen
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Jack
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Ten
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Nine
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Eight
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Seven
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Six
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Five}); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Four
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Spades,
+                num = Number.Three
+            }); 
+            deck.Add(new card()
+            {suit = Suit.Spades,
+             num = Number.Two
+            }); 
+
+            //Clubs
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
                 num = Number.Ace
+            }); deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.King
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Queen
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Jack
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Ten
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Nine
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Eight
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Seven
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Six
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Five
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Four
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Three
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Clubs,
+                num = Number.Two
+            }); 
+
+            //Diamonds
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Ace
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.King
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Queen
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Jack
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Ten
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Nine
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Eight
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Seven
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Six
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Five
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Four
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Three
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Diamonds,
+                num = Number.Two
+            }); 
+            
+            //hearts
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Ace
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.King
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Queen
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Jack
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Ten
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Nine
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Eight
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Seven
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Six
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Five
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Four
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Three
+            }); 
+            deck.Add(new card()
+            {
+                suit = Suit.Hearts,
+                num = Number.Two
             });
-            Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            }); Deck.Add(new card()
-            {
-                suit = Suit.Spades,
-                num = Number.Ace
-            });
-            ////Spades
-            //deck.Add("A♠", 14);
-            //Deck.Add("K♠", 13);
-            //Deck.Add("Q♠", 12);
-            //Deck.Add("J♠", 11);
-            //Deck.Add("10♠", 10);
-            //Deck.Add("9♠", 9);
-            //Deck.Add("8♠", 8);
-            //Deck.Add("7♠", 7);
-            //Deck.Add("6♠", 6);
-            //Deck.Add("5♠", 5);
-            //Deck.Add("4♠", 4);
-            //Deck.Add("3♠", 3);
-            //Deck.Add("2♠", 2);
-
-            ////Clubs
-            //Deck.Add("A♣", 14);
-            //Deck.Add("K♣", 13);
-            //Deck.Add("Q♣", 12);
-            //Deck.Add("J♣", 11);
-            //Deck.Add("10♣", 10);
-            //Deck.Add("9♣", 9);
-            //Deck.Add("8♣", 8);
-            //Deck.Add("7♣", 7);
-            //Deck.Add("6♣", 6);
-            //Deck.Add("5♣", 5);
-            //Deck.Add("4♣", 4);
-            //Deck.Add("3♣", 3);
-            //Deck.Add("2♣", 2);
-
-
-            ////Hearts
-            //Deck.Add("A♥", 14);
-            //Deck.Add("K♥", 13);
-            //Deck.Add("Q♥", 12);
-            //Deck.Add("J♥", 11);
-            //Deck.Add("10♥", 10);
-            //Deck.Add("9♥", 9);
-            //Deck.Add("8♥", 8);
-            //Deck.Add("7♥", 7);
-            //Deck.Add("6♥", 6);
-            //Deck.Add("5♥", 5);
-            //Deck.Add("4♥", 4);
-            //Deck.Add("3♥", 3);
-            //Deck.Add("2♥", 2);
-
-            ////Diamonds
-            //Deck.Add("A♦", 14);
-            //Deck.Add("K♦", 13);
-            //Deck.Add("Q♦", 12);
-            //Deck.Add("J♦", 11);
-            //Deck.Add("10♦", 10);
-            //Deck.Add("9♦", 9);
-            //Deck.Add("8♦", 8);
-            //Deck.Add("7♦", 7);
-            //Deck.Add("6♦", 6);
-            //Deck.Add("5♦", 5);
-            //Deck.Add("4♦", 4);
-            //Deck.Add("3♦", 3);
-            //Deck.Add("2♦", 2);
+        
         }
 
         /// <summary>
@@ -295,22 +288,22 @@ namespace WarGame
         /// </summary>
         /// <param name="cardsShuffle"></param>
         /// <returns>Shuffled set of cards</returns>
-        public void ShuffledDeck(Dictionary<string,int> cardsShuffle)
+        public Dictionary<string, int> ShuffledDeck(Dictionary<string,int> cardsShuffle)
         {
             //Dictionary<string, int> ShuffledDeck = new Dictionary<string, int>(cardsShuffle);
             List<card> ShuffleDeck = new List<card>();
             Random Shuffle = new Random();
             for (int i = 0; i < 53; i++)
             {
-                int selection = Shuffle.Next(1, 53);
-                Deck = Deck.OrderBy(x => Shuffle.Next()).ToList();
+                 int selection = Shuffle.Next(1, 53);
+                ShuffleDeck = Deck.OrderBy(X => Shuffle.Next).ToList();
             }
+          
+                
+                return string.Empty;
         }
 
-
     }
-
-}
 
     public class card
     {
