@@ -37,7 +37,7 @@ namespace WarGame
             Deck.Add("6♠", 6);
             Deck.Add("5♠", 5);
             Deck.Add("4♠", 4);
-            Deck.Add("3♠", 3);
+            Deck.Add("3♠", 3); 
             Deck.Add("2♠", 2);
 
             //Clubs
