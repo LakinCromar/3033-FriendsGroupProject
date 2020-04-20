@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:WarGame"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="NewGameBTN" Content="New Game" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Height="55" Width="165" Click="NewGameBTN_Click"/>
-        <Button x:Name="btnPlayGame" Content="Play Game" HorizontalAlignment="Left" Height="51" Margin="206,26,0,0" VerticalAlignment="Top" Width="165" IsEnabled="False" Click="btnPlayGame_Click"/>
+    <Grid Background="#FF09800E">
+        <Button x:Name="NewGameBTN" Content="New Game" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Height="55" Width="165" Click="NewGameBTN_Click" Background="#FFA21C1C" Foreground="#FFF3F3F3"/>
+        <Button x:Name="btnPlayGame" Content="Play Game" HorizontalAlignment="Left" Height="51" Margin="206,26,0,0" VerticalAlignment="Top" Width="165" IsEnabled="False" Click="btnPlayGame_Click" Background="#FFA62424" Foreground="White"/>
         <Label Content="Player 1 Cards" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" VerticalAlignment="Top" Width="143"/>
         <Label Content="Player 2 Cards" HorizontalAlignment="Left" Height="23" Margin="406,113,0,0" VerticalAlignment="Top" Width="143"/>
-        <ListBox x:Name="lsbPlayer1" HorizontalAlignment="Left" Height="292" Margin="10,140,0,0" VerticalAlignment="Top" Width="370" IsEnabled="False"/>
-        <ListBox x:Name="lsbPlayer2" HorizontalAlignment="Left" Height="292" Margin="400,140,0,0" VerticalAlignment="Top" Width="384" IsEnabled="False"/>
-        <TextBox x:Name="txtResults" HorizontalAlignment="Left" Height="66" Margin="481,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" IsEnabled="False"/>
+        <ListBox x:Name="lsbPlayer1" HorizontalAlignment="Left" Height="292" Margin="10,140,0,0" VerticalAlignment="Top" Width="370" IsEnabled="False" Background="#FF015F12" Foreground="White"/>
+        <ListBox x:Name="lsbPlayer2" HorizontalAlignment="Left" Height="292" Margin="400,140,0,0" VerticalAlignment="Top" Width="384" IsEnabled="False" Background="#FF015F12" Foreground="White"/>
+        <TextBox x:Name="txtResults" HorizontalAlignment="Left" Height="66" Margin="481,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" IsEnabled="False" Foreground="#FFFDFDFD" Background="#FF117211"/>
         <Label Content="Game Results" HorizontalAlignment="Left" Height="28" Margin="481,6,0,0" VerticalAlignment="Top" Width="221"/>
         <TextBox x:Name="txtCountP1" HorizontalAlignment="Left" Height="18" Margin="119,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
         <TextBox x:Name="txtCountP2" HorizontalAlignment="Left" Height="18" Margin="536,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>

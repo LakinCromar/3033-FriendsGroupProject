@@ -24,7 +24,7 @@ namespace WarGame
         public MainWindow()
         {
             InitializeComponent();
-
+            
 
 
             //List<card> deck = new List<card>();
@@ -449,7 +449,9 @@ namespace WarGame
             WarClass wc = new WarClass();
             int P1Convert = 0;
             int P2Convert = 0;
-
+            
+            
+            // convert the list to the new convert method so i can get values rather than strings. store them to lists of type int
             List<int> player1 = new List<int>();
             List<int> player2 = new List<int>();
             foreach (string item in P1)
@@ -464,9 +466,7 @@ namespace WarGame
 
             }
 
-
-            //make a game list
-            List<string> gameList = new List<string>();
+            //actual process for comparing card in one list to card in another list
             do
             {
                 for (int i = 0; i <player1.Count; i++)
