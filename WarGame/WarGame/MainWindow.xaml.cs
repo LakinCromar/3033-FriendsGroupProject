@@ -404,6 +404,8 @@ namespace WarGame
                 lsbPlayer2.Items.Add(P2Convert);
 
             }
+
+            //count of each players deck
             int p1Count = Player1.Count;
             int p2Count = Player2.Count;
             txtCountP1.Text = p1Count.ToString();
@@ -435,7 +437,7 @@ namespace WarGame
             }
             return SD;
         }
-        public string PlayGame(List<card> P1, List<card> P2)
+        public string PlayGame(List<string> P1, List<string> P2)
         {
             double p1Wins = 0;
             double p2Wins = 0;
@@ -444,68 +446,141 @@ namespace WarGame
             bool p1Winner;
             bool p2Winner;
             string winner = string.Empty;
-            while (P1.Count>0 ||P2.Count >0)
-            {
-                for (int i = 0; i < P1.Count; i++)
-                {
-                    if (P1[i].num > P2[i].num)
-                    {
-                        P1.Add(P1[i]);
-                        P1.Add(P2[i]);
+            WarClass wc = new WarClass();
+            int P1Convert = 0;
+            int P2Convert = 0;
 
+            List<int> player1 = new List<int>();
+            List<int> player2 = new List<int>();
+            foreach (string item in P1)
+            {
+                P1Convert = wc.ConvertNum(item);
+                player1.Add(P1Convert);
+            }
+            foreach (string item in P2)
+            {
+                P2Convert = wc.ConvertNum(item);
+                player2.Add(P2Convert);
+
+            }
+
+
+            //make a game list
+            List<string> gameList = new List<string>();
+            do
+            {
+                for (int i = 0; i <player1.Count; i++)
+                {
+                    if (player1[i] > player2[i])
+                    {
+
+                        player1.Add(player1[i]);
+                        player1.Add(player2[i]);
                         p1Wins++;
                     }
-                    else if (P1[i].num < P2[i].num)
+                    else if (player1[i] < player2[i])
                     {
-                        P2.Add(P1[i]);
-                        P2.Add(P2[i]);
+                        player2.Add(player1[i]);
+                        player2.Add(player2[i]);
                         p2Wins++;
                     }
-                    else if (P1[i].num == P2[i].num)
+                    else if (player1[i] == player2[1])
                     {
-                        while (P1[i].num == P2[i].num)
-                        {
-                            if (P1[i+4].num > P2[i+4].num)
-                            {
-                                P1.Add(P1[i]);
-                                P1.Add(P1[i +1]);
-                                P1.Add(P1[i+2]); 
-                                P1.Add(P1[i+3]); 
-                                P1.Add(P1[i+4]);
-                                P1.Add(P2[i]);
-                                P1.Add(P2[i+1]);
-                                P1.Add(P2[i+2]);
-                                P1.Add(P2[i+3]);
-                                P1.Add(P2[i+4]);
-                            }
-                            else if (P1[i + 4].num < P2[i + 4].num)
-                            {
-                                P2.Add(P1[i]);
-                                P2.Add(P1[i + 1]);
-                                P2.Add(P1[i + 2]);
-                                P2.Add(P1[i + 3]);
-                                P2.Add(P1[i + 4]);
-                                P2.Add(P2[i]);
-                                P2.Add(P2[i + 1]);
-                                P2.Add(P2[i + 2]);
-                                P2.Add(P2[i + 3]);
-                                P2.Add(P2[i + 4]);
-                            }
-                        }
-                        
-
-
                         warCount++;
+                        if (player1[i+4] > player2[i+4])
+                        {
+                            player1.Add(player1[i]);
+                            player1.Add(player1[i + 1]);
+                            player1.Add(player1[i + 2]);
+                            player1.Add(player1[i + 3]);
+                            player1.Add(player1[i + 4]);
+                            player1.Add(player2[i]);
+                            player1.Add(player2[i + 1]);
+                            player1.Add(player2[i + 2]);
+                            player1.Add(player2[i + 3]);
+                            player1.Add(player2[i + 4]); ;
+
+                            p1Wins++;
+
+                        }
+                        else if (player1[i+4] < player2[i+4])
+                        {
+                            player2.Add(player1[i]);
+                            player2.Add(player1[i + 1]);
+                            player2.Add(player1[i + 2]);
+                            player2.Add(player1[i + 3]);
+                            player2.Add(player1[i + 4]);
+                            player2.Add(player2[i]);
+                            player2.Add(player2[i + 1]);
+                            player2.Add(player2[i + 2]);
+                            player2.Add(player2[i + 3]);
+                            player2.Add(player2[i + 4]);
+
+                            p2Wins++;
+                        }
+                        else if (player1[i+4] == player2[i+4])
+                        {
+                            warCount++;
+                            if (player1[i+8] > player2[i + 8] || player1[i + 8] == player2[i + 8])
+                            {
+                                player1.Add(player1[i]);
+                                player1.Add(player1[i+1]);
+                                player1.Add(player1[i+2]);
+                                player1.Add(player1[i+3]);
+                                player1.Add(player1[i+4]);
+                                player1.Add(player2[i]);
+                                player1.Add(player2[i+1]);
+                                player1.Add(player2[i+2]);
+                                player1.Add(player2[i+3]);
+                                player1.Add(player2[i+4]);
+                                player1.Add(player1[i+5]);
+                                player1.Add(player1[i+6]);
+                                player1.Add(player1[i+7]);
+                                player1.Add(player1[i+8]);
+                                player1.Add(player2[i+5]);
+                                player1.Add(player2[i+6]);
+                                player1.Add(player2[i+7]);
+                                player1.Add(player2[i+8]);
+
+                                p1Wins++;
+                            }
+                            else if (player1[i+8] < player2[i+8])
+                            {
+                                player2.Add(player1[i]);
+                                player2.Add(player1[i + 1]);
+                                player2.Add(player1[i + 2]);
+                                player2.Add(player1[i + 3]);
+                                player2.Add(player1[i + 4]);
+                                player2.Add(player2[i]);
+                                player2.Add(player2[i + 1]);
+                                player2.Add(player2[i + 2]);
+                                player2.Add(player2[i + 3]);
+                                player2.Add(player2[i + 4]);
+                                player2.Add(player1[i + 5]);
+                                player2.Add(player1[i + 6]);
+                                player2.Add(player1[i + 7]);
+                                player2.Add(player1[i + 8]);
+                                player2.Add(player2[i + 5]);
+                                player2.Add(player2[i + 6]);
+                                player2.Add(player2[i + 7]);
+                                player2.Add(player2[i + 8]);
+
+                                p2Wins++;
+                            }
+
+                        }
                     }
                 }
-            }
-            if (P1.Count == 0)
+               
+            } while (player1.Count != 0 || player2.Count != 0);
+            
+            if (player1.Count == 0)
             {
                 p2Winner = true;
                 p1Winner = false;
                 winner = $"The winner is Player2";
             }
-            else if (P2.Count == 0)
+            else if (player2.Count == 0)
             {
                 p2Winner = false;
                 p1Winner = true;
@@ -513,7 +588,7 @@ namespace WarGame
             }
             roundsPlayed++;
 
-            string sentence = $"{winner}! \n Player 1 won {p1Wins} hands. \n Player 2 won {p2Wins} hands. \n There were {warCount} wars palyed. \n There were {roundsPlayed} rounds played";
+            string sentence = $"{winner}! \n Player 1 won {p1Wins} hands. \n Player 2 won {p2Wins} hands. \n There was {warCount} wars palyed. \n There was {roundsPlayed} rounds played";
 
             return sentence;
 
@@ -522,17 +597,9 @@ namespace WarGame
         private void btnPlayGame_Click(object sender, RoutedEventArgs e)
         {
             txtResults.IsEnabled = true;
-            List<card> Player1 = new List<card>();
-            List<card> Player2 = new List<card>();
-            foreach  (card card in lsbPlayer1.ItemsSource)
-            {
-                Player1.Add(card);
-            }
-            foreach (card card in lsbPlayer2.ItemsSource)
-            {
-                Player2.Add(card);
-            }
-            PlayGame(Player1, Player2);
+            PG pg = new PG();
+           string results =  PlayGame(pg.Player1, pg.Player2);
+            txtResults.Text = results;
         }
     }
 }
