@@ -24,68 +24,73 @@ namespace WarGame
         public MainWindow()
         {
             InitializeComponent();
-            Dictionary<string, int> Deck = new Dictionary<string, int>();
 
-            //Spades
-            Deck.Add("A♠", 14);
-            Deck.Add("K♠", 13);
-            Deck.Add("Q♠", 12);
-            Deck.Add("J♠", 11);
-            Deck.Add("10♠", 10);
-            Deck.Add("9♠", 9);
-            Deck.Add("8♠", 8);
-            Deck.Add("7♠", 7);
-            Deck.Add("6♠", 6);
-            Deck.Add("5♠", 5);
-            Deck.Add("4♠", 4);
-            Deck.Add("3♠", 3); 
-            Deck.Add("2♠", 2);
-
-            //Clubs
-            Deck.Add("A♣", 14);
-            Deck.Add("K♣", 13);
-            Deck.Add("Q♣", 12);
-            Deck.Add("J♣", 11);
-            Deck.Add("10♣", 10);
-            Deck.Add("9♣", 9);
-            Deck.Add("8♣", 8);
-            Deck.Add("7♣", 7);
-            Deck.Add("6♣", 6);
-            Deck.Add("5♣", 5);
-            Deck.Add("4♣", 4);
-            Deck.Add("3♣", 3);
-            Deck.Add("2♣", 2);
+         
+ 
 
 
-            //Hearts
-            Deck.Add("A♥", 14);
-            Deck.Add("K♥", 13);
-            Deck.Add("Q♥", 12);
-            Deck.Add("J♥", 11);
-            Deck.Add("10♥", 10);
-            Deck.Add("9♥", 9);
-            Deck.Add("8♥", 8);
-            Deck.Add("7♥", 7);
-            Deck.Add("6♥", 6);
-            Deck.Add("5♥", 5);
-            Deck.Add("4♥", 4);
-            Deck.Add("3♥", 3);
-            Deck.Add("2♥", 2);
+            //Dictionary<string, int> deck = new Dictionary<string, int>();
 
-            //Diamonds
-            Deck.Add("A♦", 14);
-            Deck.Add("K♦", 13);
-            Deck.Add("Q♦", 12);
-            Deck.Add("J♦", 11);
-            Deck.Add("10♦", 10);
-            Deck.Add("9♦", 9);
-            Deck.Add("8♦", 8);
-            Deck.Add("7♦", 7);
-            Deck.Add("6♦", 6);
-            Deck.Add("5♦", 5);
-            Deck.Add("4♦", 4);
-            Deck.Add("3♦", 3);
-            Deck.Add("2♦", 2);
+            ////Spades
+            //deck.Add("A♠", 14);
+            //deck.Add("K♠", 13);
+            //deck.Add("Q♠", 12);
+            //deck.Add("J♠", 11);
+            //deck.Add("10♠", 10);
+            //deck.Add("9♠", 9);
+            //deck.Add("8♠", 8);
+            //deck.Add("7♠", 7);
+            //deck.Add("6♠", 6);
+            //deck.Add("5♠", 5);
+            //deck.Add("4♠", 4);
+            //deck.Add("3♠", 3); 
+            //deck.Add("2♠", 2);
+
+            ////Clubs
+            //deck.Add("A♣", 14);
+            //deck.Add("K♣", 13);
+            //deck.Add("Q♣", 12);
+            //deck.Add("J♣", 11);
+            //deck.Add("10♣", 10);
+            //deck.Add("9♣", 9);
+            //deck.Add("8♣", 8);
+            //deck.Add("7♣", 7);
+            //deck.Add("6♣", 6);
+            //deck.Add("5♣", 5);
+            //deck.Add("4♣", 4);
+            //deck.Add("3♣", 3);
+            //deck.Add("2♣", 2);
+
+
+            ////Hearts
+            //deck.Add("A♥", 14);
+            //deck.Add("K♥", 13);
+            //deck.Add("Q♥", 12);
+            //deck.Add("J♥", 11);
+            //deck.Add("10♥", 10);
+            //deck.Add("9♥", 9);
+            //deck.Add("8♥", 8);
+            //deck.Add("7♥", 7);
+            //deck.Add("6♥", 6);
+            //deck.Add("5♥", 5);
+            //deck.Add("4♥", 4);
+            //deck.Add("3♥", 3);
+            //deck.Add("2♥", 2);
+
+            ////Diamonds
+            //deck.Add("A♦", 14);
+            //deck.Add("K♦", 13);
+            //deck.Add("Q♦", 12);
+            //deck.Add("J♦", 11);
+            //deck.Add("10♦", 10);
+            //deck.Add("9♦", 9);
+            //deck.Add("8♦", 8);
+            //deck.Add("7♦", 7);
+            //deck.Add("6♦", 6);
+            //deck.Add("5♦", 5);
+            //deck.Add("4♦", 4);
+            //deck.Add("3♦", 3);
+            //deck.Add("2♦", 2);
 
 
 
@@ -94,7 +99,7 @@ namespace WarGame
         private void NewGameBTN_Click(object sender, RoutedEventArgs e)
         {
             WarClass wc = new WarClass();
-            List<card> GameDeck = wc.ShuffledDeck();
+            List<card> GameDeck = ShuffledDeck();
             List<card> Player1 = new List<card>();
             List<card> Player2 = new List<card>();
             for (int i = 0; i < 26; i++)
@@ -105,16 +110,41 @@ namespace WarGame
             {
                 Player2 = GameDeck;
             }
-
+            foreach  (card card in GameDeck)
+            {
+                
+            }
             PlayGame(Player1, Player2);
 
 
 
-        }       
-        private void FlipCardBTN_Click(object sender, RoutedEventArgs e)
+        }
+        public List<card> ShuffledDeck()
         {
+            //Dictionary<string, int> ShuffledDeck = new Dictionary<string, int>(cardsShuffle);
+            List<card> ShuffleDeck = new List<card>();
+            WarClass wc = new WarClass();
+            Random Shuffle = new Random();
+            if (wc!=null)
+            {
+                for (int i = 0; i < wc.deck.Count -1; i++)
+
+                {
+                    ShuffleDeck.Add(wc.deck[i]);
+                    //int cards = Shuffle.Next(0, wc.deck.Count);
+                    //ShuffleDeck.Add(wc.deck[cards]);
+                    //wc.deck.Remove(wc.deck[cards]);
+
+                    // ShuffleDeck = wc.deck.OrderBy(X => Shuffle.Next()).ToList();
+                }
+
+            }
             
 
+
+            wc.deck = ShuffleDeck;
+
+            return ShuffleDeck;
         }
         public string PlayGame(List<card> P1, List<card> P2)
         {
@@ -131,20 +161,49 @@ namespace WarGame
                 {
                     if (P1[i].num > P2[i].num)
                     {
-
+                        P1.Add(P1[i]);
+                        P1.Add(P2[i]);
 
                         p1Wins++;
                     }
                     else if (P1[i].num < P2[i].num)
                     {
-
-
-
+                        P2.Add(P1[i]);
+                        P2.Add(P2[i]);
                         p2Wins++;
                     }
                     else if (P1[i].num == P2[i].num)
                     {
-
+                        while (P1[i].num == P2[i].num)
+                        {
+                            if (P1[i+4].num > P2[i+4].num)
+                            {
+                                P1.Add(P1[i]);
+                                P1.Add(P1[i +1]);
+                                P1.Add(P1[i+2]); 
+                                P1.Add(P1[i+3]); 
+                                P1.Add(P1[i+4]);
+                                P1.Add(P2[i]);
+                                P1.Add(P2[i+1]);
+                                P1.Add(P2[i+2]);
+                                P1.Add(P2[i+3]);
+                                P1.Add(P2[i+4]);
+                            }
+                            else if (P1[i + 4].num < P2[i + 4].num)
+                            {
+                                P2.Add(P1[i]);
+                                P2.Add(P1[i + 1]);
+                                P2.Add(P1[i + 2]);
+                                P2.Add(P1[i + 3]);
+                                P2.Add(P1[i + 4]);
+                                P2.Add(P2[i]);
+                                P2.Add(P2[i + 1]);
+                                P2.Add(P2[i + 2]);
+                                P2.Add(P2[i + 3]);
+                                P2.Add(P2[i + 4]);
+                            }
+                        }
+                        
 
 
                         warCount++;

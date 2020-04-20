@@ -12,7 +12,7 @@ namespace WarGame
     {
         public string Player1 { get; set; }
         public string Player2 { get; set; }
-        public List<card> Deck { get; set; }
+        public List<card> deck { get; set; }
 
         public WarClass()
         {
@@ -288,26 +288,7 @@ namespace WarGame
             });
 
         }
-
-        /// <summary>
-        /// This will shuffle the cards once the person clicks new game by randomizing the order of cards and storing it to a new deck
-        /// </summary>
-        /// <param name="cardsShuffle"></param>
-        /// <returns>Shuffled set of cards</returns>
-        public List<card> ShuffledDeck()
-        {
-            //Dictionary<string, int> ShuffledDeck = new Dictionary<string, int>(cardsShuffle);
-            List<card> ShuffleDeck = new List<card>();
-            Random Shuffle = new Random();
-            for (int i = 0; i < 53; i++)
-            {
-                int selection = Shuffle.Next(1, 53);
-                ShuffleDeck = Deck.OrderBy(X => Shuffle.Next()).ToList();
-            }
-
-
-            return ShuffleDeck;
-        }
+      
 
     }
 

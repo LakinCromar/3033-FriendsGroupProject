@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Border BorderThickness="1" BorderBrush="Black"/>
-        <Button x:Name="NewGameBTN" Content="New Game" HorizontalAlignment="Left" Margin="34,38,0,0" VerticalAlignment="Top" Height="55" Width="165" Click="NewGameBTN_Click"/>
+        <Button x:Name="NewGameBTN" Content="New Game" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Height="55" Width="165" Click="NewGameBTN_Click"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="534,-84,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
