@@ -25,8 +25,276 @@ namespace WarGame
         {
             InitializeComponent();
 
-         
- 
+
+
+            //List<card> deck = new List<card>();
+
+            ////Spades
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Ace
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.King
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Queen
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Jack
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Ten
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Nine
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Eight
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Seven
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Six
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Five
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Four
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Three
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Spades,
+            //    num = Number.Two
+            //});
+
+            ////Clubs
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Ace
+            //}); deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.King
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Queen
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Jack
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Ten
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Nine
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Eight
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Seven
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Six
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Five
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Four
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Three
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Clubs,
+            //    num = Number.Two
+            //});
+
+            ////Diamonds
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Ace
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.King
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Queen
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Jack
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Ten
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Nine
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Eight
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Seven
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Six
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Five
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Four
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Three
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Diamonds,
+            //    num = Number.Two
+            //});
+
+            ////hearts
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Ace
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.King
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Queen
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Jack
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Ten
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Nine
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Eight
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Seven
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Six
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Five
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Four
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Three
+            //});
+            //deck.Add(new card()
+            //{
+            //    suit = Suit.Hearts,
+            //    num = Number.Two
+            //});
 
 
             //Dictionary<string, int> deck = new Dictionary<string, int>();
@@ -98,53 +366,74 @@ namespace WarGame
         }
         private void NewGameBTN_Click(object sender, RoutedEventArgs e)
         {
+            //create new instance of war class, call the shuffled deck method, create lists for each player
             WarClass wc = new WarClass();
-            List<card> GameDeck = ShuffledDeck();
-            List<card> Player1 = new List<card>();
-            List<card> Player2 = new List<card>();
-            for (int i = 0; i < 26; i++)
-            {
-                Player1 = GameDeck;
-            }
-            for (int i = 26; i < 53; i++)
-            {
-                Player2 = GameDeck;
-            }
-            foreach  (card card in GameDeck)
-            {
-                
-            }
-            PlayGame(Player1, Player2);
+            List<string> GameDeck = ShuffledDeck();
+            List<string> Player1 = new List<string>();
+            List<string> Player2 = new List<string>();
 
+            //add cards to each players list. 
+            for (int i = 0; i < (GameDeck.Count)/2; i++)
+            {
 
+                Player1.Add(GameDeck[i]);
+            }
+            for (int i = (GameDeck.Count)/2 ; i < GameDeck.Count; i++)
+            {
+                Player2.Add(GameDeck[i]);
+            }
+
+            lsbPlayer1.IsEnabled = true;
+            lsbPlayer2.IsEnabled = true;
+
+            //start Converting from "Ace of Spades" "A♠" and store to a new list.
+            string P1Convert = string.Empty;
+            string P2Convert = string.Empty;
+      
+            
+            //output converted list to list boxes
+            foreach  (string item in Player1)
+            {
+                P1Convert = wc.Convert(item);
+               
+                lsbPlayer1.Items.Add(P1Convert);
+            }
+            foreach (var item in Player2)
+            {
+                P2Convert = wc.Convert(item);
+                lsbPlayer2.Items.Add(P2Convert);
+
+            }
+            int p1Count = Player1.Count;
+            int p2Count = Player2.Count;
+            txtCountP1.Text = p1Count.ToString();
+            txtCountP2.Text = p2Count.ToString();
+
+            btnPlayGame.IsEnabled = true;
 
         }
-        public List<card> ShuffledDeck()
+        public List<string> ShuffledDeck()
         {
-            //Dictionary<string, int> ShuffledDeck = new Dictionary<string, int>(cardsShuffle);
+           
             List<card> ShuffleDeck = new List<card>();
             WarClass wc = new WarClass();
             Random Shuffle = new Random();
-            if (wc!=null)
-            {
-                for (int i = 0; i < wc.deck.Count -1; i++)
-
-                {
-                    ShuffleDeck.Add(wc.deck[i]);
-                    //int cards = Shuffle.Next(0, wc.deck.Count);
-                    //ShuffleDeck.Add(wc.deck[cards]);
-                    //wc.deck.Remove(wc.deck[cards]);
-
-                    // ShuffleDeck = wc.deck.OrderBy(X => Shuffle.Next()).ToList();
-                }
-
-            }
             
+            //creates a new random instance of card type and stores a random oorder to shffledeck list
+            foreach  (card card in wc.Deck)
+            {
+                ShuffleDeck = wc.Deck.OrderBy(card => Shuffle.Next()).ToList();
+            }
 
-
-            wc.deck = ShuffleDeck;
-
-            return ShuffleDeck;
+            //gets the cards in the shuffled deck list and converts them to a string so i can output each card individually
+            List<string> SD = new List<string>();
+            string cd = string.Empty;
+            foreach (card item in ShuffleDeck)
+            {
+                cd = $"{item.num} of {item.suit}";
+                SD.Add(cd);
+            }
+            return SD;
         }
         public string PlayGame(List<card> P1, List<card> P2)
         {
@@ -228,12 +517,22 @@ namespace WarGame
 
             return sentence;
 
+        }
 
-
-
-
-
-
+        private void btnPlayGame_Click(object sender, RoutedEventArgs e)
+        {
+            txtResults.IsEnabled = true;
+            List<card> Player1 = new List<card>();
+            List<card> Player2 = new List<card>();
+            foreach  (card card in lsbPlayer1.ItemsSource)
+            {
+                Player1.Add(card);
+            }
+            foreach (card card in lsbPlayer2.ItemsSource)
+            {
+                Player2.Add(card);
+            }
+            PlayGame(Player1, Player2);
         }
     }
 }
