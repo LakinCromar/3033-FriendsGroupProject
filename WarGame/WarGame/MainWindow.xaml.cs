@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -27,342 +28,7 @@ namespace WarGame
             
 
 
-            //List<card> deck = new List<card>();
-
-            ////Spades
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Ace
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.King
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Queen
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Jack
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Ten
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Nine
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Eight
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Seven
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Six
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Five
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Four
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Three
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Spades,
-            //    num = Number.Two
-            //});
-
-            ////Clubs
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Ace
-            //}); deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.King
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Queen
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Jack
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Ten
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Nine
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Eight
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Seven
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Six
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Five
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Four
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Three
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Clubs,
-            //    num = Number.Two
-            //});
-
-            ////Diamonds
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Ace
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.King
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Queen
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Jack
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Ten
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Nine
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Eight
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Seven
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Six
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Five
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Four
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Three
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Diamonds,
-            //    num = Number.Two
-            //});
-
-            ////hearts
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Ace
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.King
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Queen
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Jack
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Ten
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Nine
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Eight
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Seven
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Six
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Five
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Four
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Three
-            //});
-            //deck.Add(new card()
-            //{
-            //    suit = Suit.Hearts,
-            //    num = Number.Two
-            //});
-
-
-            //Dictionary<string, int> deck = new Dictionary<string, int>();
-
-            ////Spades
-            //deck.Add("A♠", 14);
-            //deck.Add("K♠", 13);
-            //deck.Add("Q♠", 12);
-            //deck.Add("J♠", 11);
-            //deck.Add("10♠", 10);
-            //deck.Add("9♠", 9);
-            //deck.Add("8♠", 8);
-            //deck.Add("7♠", 7);
-            //deck.Add("6♠", 6);
-            //deck.Add("5♠", 5);
-            //deck.Add("4♠", 4);
-            //deck.Add("3♠", 3); 
-            //deck.Add("2♠", 2);
-
-            ////Clubs
-            //deck.Add("A♣", 14);
-            //deck.Add("K♣", 13);
-            //deck.Add("Q♣", 12);
-            //deck.Add("J♣", 11);
-            //deck.Add("10♣", 10);
-            //deck.Add("9♣", 9);
-            //deck.Add("8♣", 8);
-            //deck.Add("7♣", 7);
-            //deck.Add("6♣", 6);
-            //deck.Add("5♣", 5);
-            //deck.Add("4♣", 4);
-            //deck.Add("3♣", 3);
-            //deck.Add("2♣", 2);
-
-
-            ////Hearts
-            //deck.Add("A♥", 14);
-            //deck.Add("K♥", 13);
-            //deck.Add("Q♥", 12);
-            //deck.Add("J♥", 11);
-            //deck.Add("10♥", 10);
-            //deck.Add("9♥", 9);
-            //deck.Add("8♥", 8);
-            //deck.Add("7♥", 7);
-            //deck.Add("6♥", 6);
-            //deck.Add("5♥", 5);
-            //deck.Add("4♥", 4);
-            //deck.Add("3♥", 3);
-            //deck.Add("2♥", 2);
-
-            ////Diamonds
-            //deck.Add("A♦", 14);
-            //deck.Add("K♦", 13);
-            //deck.Add("Q♦", 12);
-            //deck.Add("J♦", 11);
-            //deck.Add("10♦", 10);
-            //deck.Add("9♦", 9);
-            //deck.Add("8♦", 8);
-            //deck.Add("7♦", 7);
-            //deck.Add("6♦", 6);
-            //deck.Add("5♦", 5);
-            //deck.Add("4♦", 4);
-            //deck.Add("3♦", 3);
-            //deck.Add("2♦", 2);
-
-
-
-
+          
         }
         private void NewGameBTN_Click(object sender, RoutedEventArgs e)
         {
@@ -449,130 +115,117 @@ namespace WarGame
             WarClass wc = new WarClass();
             int P1Convert = 0;
             int P2Convert = 0;
-            
-            
+
+
             // convert the list to the new convert method so i can get values rather than strings. store them to lists of type int
-            List<int> player1 = new List<int>();
-            List<int> player2 = new List<int>();
+            Queue<int> player1 = new Queue<int>();
+            Queue<int> player2 = new Queue<int>();
+            
             foreach (string item in P1)
             {
                 P1Convert = wc.ConvertNum(item);
-                player1.Add(P1Convert);
+                player1.Enqueue(P1Convert);
             }
             foreach (string item in P2)
             {
                 P2Convert = wc.ConvertNum(item);
-                player2.Add(P2Convert);
+                player2.Enqueue(P2Convert);
 
             }
-
+            //use stack instead of list pop()
             //actual process for comparing card in one list to card in another list
             do
             {
-                for (int i = 0; i <player1.Count; i++)
-                {
-                    if (player1[i] > player2[i])
-                    {
+               
+                int p1 = player1.Dequeue();
+                int p2 = player2.Dequeue();
 
-                        player1.Add(player1[i]);
-                        player1.Add(player2[i]);
-                        p1Wins++;
-                    }
-                    else if (player1[i] < player2[i])
+
+                if (p1 > p2)
+                {
+                    player1.Enqueue(p1);
+                    player1.Enqueue(p2);
+                      
+                        
+                    p1Wins++;
+                }
+                else if (p1 < p2)
+                {
+                    player2.Enqueue(p1);
+                    player2.Enqueue(p2);
+                        
+                    p2Wins++;
+                }
+                else if (p1 == p2)
+                {
+                    warCount++;
+                List<int> war = new List<int>();
+
+                war.Add(p1);
+                war.Add(p2);
+                war.Add(player1.Dequeue());
+                war.Add(player1.Dequeue());
+                war.Add(player1.Dequeue());
+                war.Add(player2.Dequeue()); 
+                war.Add(player2.Dequeue()); 
+                war.Add(player2.Dequeue());
+
+                    if (player1.Dequeue() > player2.Dequeue())
                     {
-                        player2.Add(player1[i]);
-                        player2.Add(player2[i]);
-                        p2Wins++;
-                    }
-                    else if (player1[i] == player2[1])
-                    {
-                        warCount++;
-                        if (player1[i+4] > player2[i+4])
+                        foreach (var item in war)
                         {
-                            player1.Add(player1[i]);
-                            player1.Add(player1[i + 1]);
-                            player1.Add(player1[i + 2]);
-                            player1.Add(player1[i + 3]);
-                            player1.Add(player1[i + 4]);
-                            player1.Add(player2[i]);
-                            player1.Add(player2[i + 1]);
-                            player1.Add(player2[i + 2]);
-                            player1.Add(player2[i + 3]);
-                            player1.Add(player2[i + 4]); ;
+                            player1.Enqueue(item);
+                        }
+
+
+                        p1Wins++;
+
+                    }
+                    else if (player1.Dequeue() < player2.Dequeue())
+                    {
+                        foreach (var item in war)
+                        {
+                            player2.Enqueue(item);
+                        }
+                    }
+                    if(player1.Dequeue() == player2.Dequeue())
+                    {
+                        do
+                        {
+                            warCount++;
+                            war.Add(player1.Dequeue());
+                            war.Add(player1.Dequeue());
+                            war.Add(player1.Dequeue());
+                            war.Add(player2.Dequeue());
+                            war.Add(player2.Dequeue());
+                            war.Add(player2.Dequeue());
+                            
+                        } while (player1.Dequeue() == player2.Dequeue());
+
+                        if (player1.Dequeue() > player2.Dequeue())
+                        {
+                            foreach (var item in war)
+                            {
+                                player1.Enqueue(item);
+                            }
+
 
                             p1Wins++;
 
                         }
-                        else if (player1[i+4] < player2[i+4])
+                        else if (player1.Dequeue() < player2.Dequeue())
                         {
-                            player2.Add(player1[i]);
-                            player2.Add(player1[i + 1]);
-                            player2.Add(player1[i + 2]);
-                            player2.Add(player1[i + 3]);
-                            player2.Add(player1[i + 4]);
-                            player2.Add(player2[i]);
-                            player2.Add(player2[i + 1]);
-                            player2.Add(player2[i + 2]);
-                            player2.Add(player2[i + 3]);
-                            player2.Add(player2[i + 4]);
-
-                            p2Wins++;
-                        }
-                        else if (player1[i+4] == player2[i+4])
-                        {
-                            warCount++;
-                            if (player1[i+8] > player2[i + 8] || player1[i + 8] == player2[i + 8])
+                            foreach (var item in war)
                             {
-                                player1.Add(player1[i]);
-                                player1.Add(player1[i+1]);
-                                player1.Add(player1[i+2]);
-                                player1.Add(player1[i+3]);
-                                player1.Add(player1[i+4]);
-                                player1.Add(player2[i]);
-                                player1.Add(player2[i+1]);
-                                player1.Add(player2[i+2]);
-                                player1.Add(player2[i+3]);
-                                player1.Add(player2[i+4]);
-                                player1.Add(player1[i+5]);
-                                player1.Add(player1[i+6]);
-                                player1.Add(player1[i+7]);
-                                player1.Add(player1[i+8]);
-                                player1.Add(player2[i+5]);
-                                player1.Add(player2[i+6]);
-                                player1.Add(player2[i+7]);
-                                player1.Add(player2[i+8]);
-
-                                p1Wins++;
+                                player2.Enqueue(item);
                             }
-                            else if (player1[i+8] < player2[i+8])
-                            {
-                                player2.Add(player1[i]);
-                                player2.Add(player1[i + 1]);
-                                player2.Add(player1[i + 2]);
-                                player2.Add(player1[i + 3]);
-                                player2.Add(player1[i + 4]);
-                                player2.Add(player2[i]);
-                                player2.Add(player2[i + 1]);
-                                player2.Add(player2[i + 2]);
-                                player2.Add(player2[i + 3]);
-                                player2.Add(player2[i + 4]);
-                                player2.Add(player1[i + 5]);
-                                player2.Add(player1[i + 6]);
-                                player2.Add(player1[i + 7]);
-                                player2.Add(player1[i + 8]);
-                                player2.Add(player2[i + 5]);
-                                player2.Add(player2[i + 6]);
-                                player2.Add(player2[i + 7]);
-                                player2.Add(player2[i + 8]);
-
-                                p2Wins++;
-                            }
-
                         }
+
                     }
+
                 }
-               
-            } while (player1.Count != 0 || player2.Count != 0);
+                 
+            } while (player1.Dequeue() !=0 || player2.Dequeue() != 0);
             
             if (player1.Count == 0)
             {
@@ -598,7 +251,17 @@ namespace WarGame
         {
             txtResults.IsEnabled = true;
             PG pg = new PG();
-           string results =  PlayGame(pg.Player1, pg.Player2);
+            List<string> Player1 = new List<string>();
+            List<string> Player2 = new List<string>();
+            foreach (var item in lsbPlayer1.Items)
+            {
+                Player1.Add(item.ToString());
+            }
+            foreach (var item in lsbPlayer2.Items)
+            {
+                Player2.Add(item.ToString());
+            }
+           string results =  PlayGame(Player1, Player2);
             txtResults.Text = results;
         }
     }

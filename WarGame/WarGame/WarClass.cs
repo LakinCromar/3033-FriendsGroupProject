@@ -584,282 +584,281 @@ namespace WarGame
         {
             string cardName = string.Empty;
             int cardValue = 0;
-            card c = new card();
 
 
             //Spades
-            if (card == "Ace of Spades")
+            if (card == "A♠")
             {
                 cardName = "A♠";
                 cardValue = 14;
             }
-            else if (card == "King of Spades")
+            else if (card == "K♠")
             {
                 cardName = "K♠";
                 cardValue = 13;
             }
-            else if (card == "Queen of Spades")
+            else if (card == "K♠")
             {
                 cardName = "Q♠";
                 cardValue = 12;
             }
-            else if (card == "Jack of Spades")
+            else if (card == "J♠")
             {
                 cardName = "J♠";
                 cardValue = 11;
             }
-            else if (card == "Ten of Spades")
+            else if (card == "10♠")
             {
                 cardName = "10♠";
                 cardValue = 10;
             }
-            else if (card == "Nine of Spades")
+            else if (card == "9♠")
             {
                 cardName = "9♠";
                 cardValue = 9;
             }
-            else if (card == "Eight of Spades")
+            else if (card == "8♠")
             {
                 cardName = "8♠";
                 cardValue = 8;
             }
-            else if (card == "Seven of Spades")
+            else if (card == "7♠")
             {
                 cardName = "7♠";
                 cardValue = 7;
             }
-            else if (card == "Six of Spades")
+            else if (card == "6♠")
             {
                 cardName = "6♠";
                 cardValue = 6;
             }
-            else if (card == "Five of Spades")
+            else if (card == "5♠")
             {
                 cardName = "5♠";
                 cardValue = 5;
             }
-            else if (card == "Four of Spades")
+            else if (card == "4♠")
             {
                 cardName = "4♠";
                 cardValue = 4;
             }
-            else if (card == "Three of Spades")
+            else if (card == "3♠")
             {
                 cardName = "3♠";
                 cardValue = 3;
             }
-            else if (card == "Two of Spades")
+            else if (card == "2♠")
             {
                 cardName = "2♠";
                 cardValue = 2;
             }
 
             //Clubs
-            else if (card == "Ace of Clubs")
+            else if (card == "A♣")
             {
                 cardName = "A♣";
                 cardValue = 14;
             }
-            else if (card == "King of Clubs")
+            else if (card == "K♣")
             {
                 cardName = "K♣";
                 cardValue = 13;
             }
-            else if (card == "Queen of Clubs")
+            else if (card == "Q♣")
             {
                 cardName = "Q♣";
                 cardValue = 12;
             }
 
-            else if (card == "Jack of Clubs")
+            else if (card == "J♣")
             {
                 cardName = "J♣";
                 cardValue = 11;
             }
 
-            else if (card == "Ten of Clubs")
+            else if (card == "10♣")
             {
                 cardName = "10♣";
                 cardValue = 10;
             }
 
-            else if (card == "Nine of Clubs")
+            else if (card == "9♣")
             {
                 cardName = "9♣";
                 cardValue = 9;
             }
 
-            else if (card == "Eight of Clubs")
+            else if (card == "8♣")
             {
                 cardName = "8♣";
                 cardValue = 8;
             }
 
-            else if (card == "Seven of Clubs")
+            else if (card == "7♣")
             {
                 cardName = "7♣";
                 cardValue = 7;
             }
 
-            else if (card == "Six of Clubs")
+            else if (card == "6♣")
             {
                 cardName = "6♣";
                 cardValue = 6;
             }
 
-            else if (card == "Five of Clubs")
+            else if (card == "5♣")
             {
                 cardName = "5♣";
                 cardValue = 5;
             }
 
-            else if (card == "Four of Clubs")
+            else if (card == "4♣")
             {
                 cardName = "4♣";
                 cardValue = 4;
             }
 
-            else if (card == "Three of Clubs")
+            else if (card == "3♣")
             {
                 cardName = "3♣";
                 cardValue = 3;
             }
 
-            else if (card == "Two of Clubs")
+            else if (card == "2♣")
             {
                 cardName = "2♣";
                 cardValue = 2;
             }
 
             //Hearts
-            else if (card == "Ace of Hearts")
+            else if (card == "A♥")
             {
                 cardName = "A♥";
                 cardValue = 14;
             }
-            else if (card == "King of Hearts")
+            else if (card == "K♥")
             {
                 cardName = "K♥";
                 cardValue = 13;
             }
-            else if (card == "Queen of Hearts")
+            else if (card == "Q♥")
             {
                 cardName = "Q♥";
                 cardValue = 12;
             }
-            else if (card == "Jack of Hearts")
+            else if (card == "J♥")
             {
                 cardName = "J♥";
                 cardValue = 11;
             }
-            else if (card == "Ten of Hearts")
+            else if (card == "10♥")
             {
                 cardName = "10♥";
                 cardValue = 10;
             }
-            else if (card == "Nine of Hearts")
+            else if (card == "9♥")
             {
                 cardName = "9♥";
                 cardValue = 9;
             }
-            else if (card == "Eight of Hearts")
+            else if (card == "8♥")
             {
                 cardName = "8♥";
                 cardValue = 8;
             }
-            else if (card == "Seven of Hearts")
+            else if (card == "7♥")
             {
                 cardName = "7♥";
                 cardValue = 7;
             }
-            else if (card == "Six of Hearts")
+            else if (card == "6♥")
             {
                 cardName = "6♥";
                 cardValue = 6;
             }
-            else if (card == "Five of Hearts")
+            else if (card == "5♥")
             {
                 cardName = "5♥";
                 cardValue = 5;
             }
-            else if (card == "Four of Hearts")
+            else if (card == "4♥")
             {
                 cardName = "4♥";
                 cardValue = 4;
             }
-            else if (card == "Three of Hearts")
+            else if (card == "3♥")
             {
                 cardName = "3♥";
                 cardValue = 3;
             }
-            else if (card == "Two of Hearts")
+            else if (card == "2♥")
             {
                 cardName = "2♥";
                 cardValue = 2;
             }
 
             //Diamonds
-            else if (card == "Ace of Diamonds")
+            else if (card == "A♦")
             {
                 cardName = "A♦";
                 cardValue = 14;
             }
-            else if (card == "King of Diamonds")
+            else if (card == "K♦")
             {
                 cardName = "K♦";
                 cardValue = 13;
             }
-            else if (card == "Queen of Diamonds")
+            else if (card == "Q♦")
             {
                 cardName = "Q♦";
                 cardValue = 12;
             }
-            else if (card == "Jack of Diamonds")
+            else if (card == "J♦")
             {
                 cardName = "J♦";
                 cardValue = 11;
             }
-            else if (card == "Ten of Diamonds")
+            else if (card == "10♦")
             {
                 cardName = "10♦";
                 cardValue = 10;
             }
-            else if (card == "Nine of Diamonds")
+            else if (card == "9♦")
             {
                 cardName = "9♦";
                 cardValue = 9;
             }
-            else if (card == "Eight of Diamonds")
+            else if (card == "8♦")
             {
                 cardName = "8♦";
                 cardValue = 8;
             }
-            else if (card == "Seven of Diamonds")
+            else if (card == "7♦")
             {
                 cardName = "7♦";
                 cardValue = 7;
             }
-            else if (card == "Six of Diamonds")
+            else if (card == "6♦")
             {
                 cardName = "6♦";
                 cardValue = 6;
             }
-            else if (card == "Five of Diamonds")
+            else if (card == "5♦")
             {
                 cardName = "5♦";
                 cardValue = 5;
             }
-            else if (card == "Four of Diamonds")
+            else if (card == "4♦")
             {
                 cardName = "4♦";
                 cardValue = 4;
             }
-            else if (card == "Three of Diamonds")
+            else if (card == "3♦")
             {
                 cardName = "3♦";
                 cardValue = 3;
             }
-            else if (card == "Two of Diamonds")
+            else if (card == "2♦")
             {
                 cardName = "2♦";
                 cardValue = 2;
@@ -927,6 +926,7 @@ public class PG
     {
         Player1 = new List<string>();
         Player2 = new List<string>();
+        
     }
 }
 
