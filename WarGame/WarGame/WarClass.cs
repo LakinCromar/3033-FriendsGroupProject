@@ -916,18 +916,5 @@ namespace WarGame
 
     
 }
-public class PG
-{
-    public List<string> Player1 { get; set; }
-    public List<string> Player2 { get; set; }
-
-
-    public PG()
-    {
-        Player1 = new List<string>();
-        Player2 = new List<string>();
-        
-    }
-}
 
 

@@ -32,6 +32,11 @@ namespace WarGame
         }
         private void NewGameBTN_Click(object sender, RoutedEventArgs e)
         {
+            lsbPlayer1.Items.Clear();
+            lsbPlayer2.Items.Clear();
+            txtResults.Text = string.Empty;
+
+
             //create new instance of war class, call the shuffled deck method, create lists for each player
             WarClass wc = new WarClass();
             List<string> GameDeck = ShuffledDeck();
@@ -115,12 +120,13 @@ namespace WarGame
             WarClass wc = new WarClass();
             int P1Convert = 0;
             int P2Convert = 0;
-
+            bool p1Done = false;
+            bool p2Done = false;
 
             // convert the list to the new convert method so i can get values rather than strings. store them to lists of type int
             Queue<int> player1 = new Queue<int>();
             Queue<int> player2 = new Queue<int>();
-            
+
             foreach (string item in P1)
             {
                 P1Convert = wc.ConvertNum(item);
@@ -136,7 +142,7 @@ namespace WarGame
             //actual process for comparing card in one list to card in another list
             do
             {
-               
+
                 int p1 = player1.Dequeue();
                 int p2 = player2.Dequeue();
 
@@ -145,65 +151,42 @@ namespace WarGame
                 {
                     player1.Enqueue(p1);
                     player1.Enqueue(p2);
-                      
-                        
+
+
                     p1Wins++;
                 }
                 else if (p1 < p2)
                 {
                     player2.Enqueue(p1);
                     player2.Enqueue(p2);
-                        
+
                     p2Wins++;
                 }
                 else if (p1 == p2)
                 {
-                    warCount++;
-                List<int> war = new List<int>();
-
-                war.Add(p1);
-                war.Add(p2);
-                war.Add(player1.Dequeue());
-                war.Add(player1.Dequeue());
-                war.Add(player1.Dequeue());
-                war.Add(player2.Dequeue()); 
-                war.Add(player2.Dequeue()); 
-                war.Add(player2.Dequeue());
-
-                    if (player1.Dequeue() > player2.Dequeue())
+                    
+                    List<int> war = new List<int>();
+                    if (player1.Count() >= 5 && player2.Count() >= 5)
                     {
-                        foreach (var item in war)
-                        {
-                            player1.Enqueue(item);
-                        }
+                        int p1_5 = 0;
+                        int p2_5 = 0;
+                        // add p1, p2 and three cards from each player to war list
+                        war.Add(p1);
+                        war.Add(p2);
+                        war.Add(player1.Dequeue());
+                        war.Add(player1.Dequeue());
+                        war.Add(player1.Dequeue());
+                        war.Add(player2.Dequeue());
+                        war.Add(player2.Dequeue());
+                        war.Add(player2.Dequeue());
 
+                        p1_5 = player1.Dequeue();
+                        p2_5 = player2.Dequeue();
 
-                        p1Wins++;
-
-                    }
-                    else if (player1.Dequeue() < player2.Dequeue())
-                    {
-                        foreach (var item in war)
+                        if (p1_5 > p2_5)
                         {
-                            player2.Enqueue(item);
-                        }
-                    }
-                    if(player1.Dequeue() == player2.Dequeue())
-                    {
-                        do
-                        {
-                            warCount++;
-                            war.Add(player1.Dequeue());
-                            war.Add(player1.Dequeue());
-                            war.Add(player1.Dequeue());
-                            war.Add(player2.Dequeue());
-                            war.Add(player2.Dequeue());
-                            war.Add(player2.Dequeue());
-                            
-                        } while (player1.Dequeue() == player2.Dequeue());
-
-                        if (player1.Dequeue() > player2.Dequeue())
-                        {
+                            player1.Enqueue(p1_5);
+                            player1.Enqueue(p2_5);
                             foreach (var item in war)
                             {
                                 player1.Enqueue(item);
@@ -211,46 +194,137 @@ namespace WarGame
 
 
                             p1Wins++;
+                            warCount++;
 
                         }
-                        else if (player1.Dequeue() < player2.Dequeue())
+                        else if (p1_5 < p2_5)
                         {
+
+                            player2.Enqueue(p1_5);
+                            player2.Enqueue(p2_5);
                             foreach (var item in war)
                             {
                                 player2.Enqueue(item);
                             }
+                            p2Wins++;
+                            warCount++;
+                        }
+                        else if (p1_5 == p2_5)
+                        {
+                            int p1_num = 0;
+                            int p2_num = 0;
+                            //add p_5 to war and then loop for war
+                            war.Add(p1_5);
+                            war.Add(p2_5);
+
+                            do
+                            {
+                                if (player1.Count >= 4 && player2.Count() >= 4)
+                                {
+                                    warCount++;
+
+                                    //add 3 cards from each player to ar 
+                                    war.Add(player1.Dequeue());
+                                    war.Add(player1.Dequeue());
+                                    war.Add(player1.Dequeue());
+                                    war.Add(player2.Dequeue());
+                                    war.Add(player2.Dequeue());
+                                    war.Add(player2.Dequeue());
+
+                                    //create new cards to compare
+                                    p1_num = player1.Dequeue();
+                                    p2_num = player2.Dequeue();
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            } while (p1_num == p2_num);
+
+                            if (p1_num > p2_num)
+                            {
+                                foreach (var item in war)
+                                {
+                                    player1.Enqueue(item);
+                                }
+
+
+                                p1Wins++;
+
+                            }
+                            else if (p1_num < p2_num)
+                            {
+                                foreach (var item in war)
+                                {
+                                    player2.Enqueue(item);
+                                }
+                                p2Wins++;
+                            }
+
+
+
+
                         }
 
                     }
+                    else
+                    {
+                        break;
+                    }
 
                 }
-                 
-            } while (player1.Dequeue() !=0 || player2.Dequeue() != 0);
-            
-            if (player1.Count == 0)
-            {
-                p2Winner = true;
-                p1Winner = false;
-                winner = $"The winner is Player2";
-            }
-            else if (player2.Count == 0)
-            {
-                p2Winner = false;
-                p1Winner = true;
-                winner = $"The winner is Player1";
-            }
-            roundsPlayed++;
+                if (player1.Any() == true && player2.Any() == true)
+                {
+                    p1Done = false;
+                    p2Done = false;
+                }
+                else if (player1.Any() == false && player2.Any() == true)
+                {
+                    p1Done = true;
+                    p2Done = false;
+                }
+                else if (player1.Any() == true && player2.Any() == false)
+                {
+                    p1Done = false;
+                    p2Done = true;
+                }
 
-            string sentence = $"{winner}! \n Player 1 won {p1Wins} hands. \n Player 2 won {p2Wins} hands. \n There was {warCount} wars palyed. \n There was {roundsPlayed} rounds played";
 
-            return sentence;
+
+               roundsPlayed++;
+             
+            } while (p1Done == false && p2Done == false) ;
+
+
+
+                if (player1.Count() > player2.Count())
+                {
+                    p2Winner = true;
+                    p1Winner = false;
+                    winner = $"The winner is Player 1";
+                }
+                else if (player1.Count() < player2.Count())
+                {
+                    p2Winner = false;
+                    p1Winner = true;
+                    winner = $"The winner is Player 2";
+                }
+
+
+
+
+                string sentence = $"{winner}! \n Player 1 won {p1Wins} hands. \n Player 2 won {p2Wins} hands. \n There was {warCount} wars palyed. \n There was {roundsPlayed} rounds played";
+
+                return sentence;
 
         }
+                
 
         private void btnPlayGame_Click(object sender, RoutedEventArgs e)
         {
+            string results = string.Empty;
             txtResults.IsEnabled = true;
-            PG pg = new PG();
+         
             List<string> Player1 = new List<string>();
             List<string> Player2 = new List<string>();
             foreach (var item in lsbPlayer1.Items)
@@ -261,7 +335,7 @@ namespace WarGame
             {
                 Player2.Add(item.ToString());
             }
-           string results =  PlayGame(Player1, Player2);
+            results =  PlayGame(Player1, Player2);
             txtResults.Text = results;
         }
     }
