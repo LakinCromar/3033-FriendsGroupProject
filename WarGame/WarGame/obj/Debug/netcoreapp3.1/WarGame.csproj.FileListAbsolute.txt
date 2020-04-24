@@ -1,4 +1,3 @@
-C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.csprojAssemblyReference.cache
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame_MarkupCompile.cache
@@ -17,3 +16,4 @@ C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.dll
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.pdb
 C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.genruntimeconfig.cache
+C:\Users\clint\Source\Repos\3033-FriendsGroupProject3\WarGame\WarGame\obj\Debug\netcoreapp3.1\WarGame.csprojAssemblyReference.cache

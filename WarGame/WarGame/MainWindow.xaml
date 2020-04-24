@@ -11,7 +11,7 @@
         <Button x:Name="btnPlayGame" Content="Play Game" HorizontalAlignment="Left" Height="51" Margin="206,26,0,0" VerticalAlignment="Top" Width="165" IsEnabled="False" Click="btnPlayGame_Click" Background="#FFA62424" Foreground="White"/>
         <Label Content="Player 1 Cards" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" VerticalAlignment="Top" Width="143"/>
         <Label Content="Player 2 Cards" HorizontalAlignment="Left" Height="23" Margin="406,113,0,0" VerticalAlignment="Top" Width="143"/>
-        <ListBox x:Name="lsbPlayer1" HorizontalAlignment="Left" Height="292" Margin="10,140,0,0" VerticalAlignment="Top" Width="370" IsEnabled="False" Background="#FF015F12" Foreground="White"/>
+        <ListBox x:Name="lsbPlayer1" HorizontalAlignment="Left" Height="284" Margin="10,140,0,0" VerticalAlignment="Top" Width="346" IsEnabled="False" Background="#FF015F12" Foreground="White"/>
         <ListBox x:Name="lsbPlayer2" HorizontalAlignment="Left" Height="292" Margin="400,140,0,0" VerticalAlignment="Top" Width="384" IsEnabled="False" Background="#FF015F12" Foreground="White"/>
         <TextBox x:Name="txtResults" HorizontalAlignment="Left" Height="66" Margin="481,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" IsEnabled="False" Foreground="#FFFDFDFD" Background="#FF117211"/>
         <Label Content="Game Results" HorizontalAlignment="Left" Height="28" Margin="481,6,0,0" VerticalAlignment="Top" Width="221"/>
